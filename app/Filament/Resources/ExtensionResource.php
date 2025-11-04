@@ -29,8 +29,11 @@ class ExtensionResource extends Resource
         ->schema([
             TextInput::make('numero')->disabled(),
             TextInput::make('operador')
-                ->label('Nombre del Operador')
-                ->nullable(),
+            ->label('Nombre del Operador')
+            ->nullable(),
+            TextInput::make('host'),
+            TextInput::make('puerto'),
+            TextInput::make('password'),
         ]);
 }
 

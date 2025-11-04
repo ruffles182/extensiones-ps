@@ -10,5 +10,5 @@ class Extension extends Model
     use HasFactory;
 
     protected $table = 'extensiones';
-    protected $fillable = ['numero', 'operador'];
+    protected $fillable = ['numero', 'operador', 'host', 'puerto', 'password'];
 }
